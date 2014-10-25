@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  platform_course_id: 1
+  url: MyText
+  active: false
+  duration: MyText
+  startDay: 1
+  startMonth: 1
+  startYear: 1
+  session_name: MyText
+  openDate: 2014-10-24 19:08:28
+  closeDate: 2014-10-24 19:08:28
+  price: 9.99
+
+two:
+  platform_course_id: 1
+  url: MyText
+  active: false
+  duration: MyText
+  startDay: 1
+  startMonth: 1
+  startYear: 1
+  session_name: MyText
+  openDate: 2014-10-24 19:08:28
+  closeDate: 2014-10-24 19:08:28
+  price: 9.99
