@@ -30,6 +30,11 @@ gem 'spring',        group: :development
 # For Heroku test
 gem 'cowsay'
 
+# Bootstrap
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
+
 # Get and parse from APIs
 gem 'json'
 gem 'rest-client'
