@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  skill_level: MyText
+  estimated_months: 1
+  concentration: MyText
+
+two:
+  name: MyText
+  skill_level: MyText
+  estimated_months: 1
+  concentration: MyText
