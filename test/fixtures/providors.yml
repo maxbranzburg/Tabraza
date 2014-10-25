@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  shortName: MyText
+  banner: MyText
+  homeLink: MyText
+  location: MyText
+  locationCity: MyText
+  locationState: MyText
+  locationCountry: MyText
+  classLogo: MyText
+  logo: MyText
+  squareLogo: MyText
+  landingPageBanner: MyText
+
+two:
+  name: MyText
+  shortName: MyText
+  banner: MyText
+  homeLink: MyText
+  location: MyText
+  locationCity: MyText
+  locationState: MyText
+  locationCountry: MyText
+  classLogo: MyText
+  logo: MyText
+  squareLogo: MyText
+  landingPageBanner: MyText

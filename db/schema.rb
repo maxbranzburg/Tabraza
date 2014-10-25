@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141025021355) do
+ActiveRecord::Schema.define(version: 20141025021748) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,24 @@ ActiveRecord::Schema.define(version: 20141025021355) do
     t.text     "url"
     t.decimal  "price"
     t.integer  "hours_per_week"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "providors", force: true do |t|
+    t.integer  "platform_providor_id"
+    t.text     "name"
+    t.text     "shortName"
+    t.text     "banner"
+    t.text     "homeLink"
+    t.text     "location"
+    t.text     "locationCity"
+    t.text     "locationState"
+    t.text     "locationCountry"
+    t.text     "classLogo"
+    t.text     "logo"
+    t.text     "squareLogo"
+    t.text     "landingPageBanner"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
