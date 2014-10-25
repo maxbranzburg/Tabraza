@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  platform_course_id: 1
+  platform: MyText
+  providor: MyText
+  name: MyText
+  description: MyText
+  category: MyText
+  duration: MyText
+  instructor: MyText
+  language: MyText
+  photo: MyText
+  video: MyText
+  url: MyText
+  price: 9.99
+  hours_per_week: 1
+
+two:
+  platform_course_id: 1
+  platform: MyText
+  providor: MyText
+  name: MyText
+  description: MyText
+  category: MyText
+  duration: MyText
+  instructor: MyText
+  language: MyText
+  photo: MyText
+  video: MyText
+  url: MyText
+  price: 9.99
+  hours_per_week: 1

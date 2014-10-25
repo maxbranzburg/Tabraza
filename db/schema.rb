@@ -11,9 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20141025015520) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "courses", force: true do |t|
+    t.integer  "platform_course_id"
+    t.text     "platform"
+    t.text     "providor"
+    t.text     "name"
+    t.text     "description"
+    t.text     "category"
+    t.text     "duration"
+    t.text     "instructor"
+    t.text     "language"
+    t.text     "photo"
+    t.text     "video"
+    t.text     "url"
+    t.decimal  "price"
+    t.integer  "hours_per_week"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
