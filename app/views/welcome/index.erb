@@ -1,9 +1,62 @@
  <div class="container">
 
-        <!-- Jumbotron Header -->
         <header class="jumbotron hero-spacer">
 	        <h2>Welcome to Tabraza!</h2>
 	        <p><p><em>Take your dream courses from the world's top universities</em></p></p>
         </header>
 
         <hr>
+        
+        <div class="center-block">
+
+	        <div class="row">
+	            <div class="col-lg-12">
+	                <h3>Popular Courses</h3>
+	            </div>
+	        </div>
+
+	        <div class="row text-center">
+				<div class="col-md-3 col-sm-6 hero-feature">
+	                <div class="thumbnail" style="height: 300px">
+	                    <%= link_to image_tag(@course_a.photo), @course_a %>
+	                    <div class="caption">
+	                        <h6><%= @course_a.name %></h6>
+	                    </div>
+	                </div>
+	            </div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-3 col-sm-6 hero-feature">
+	                <div class="thumbnail" style="height: 300px">
+	                    <%= link_to image_tag(@course_b.photo), @course_b %>
+	                    <div class="caption">
+	                        <h6><%= @course_b.name %></h6>
+	                    </div>
+	                </div>
+	            </div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-3 col-sm-6 hero-feature">
+	                <div class="thumbnail" style="height: 300px">
+	                    <%= link_to image_tag(@course_c.photo), @course_c %>
+	                    <div class="caption">
+	                        <h6><%= @course_c.name %></h6>
+	                    </div>
+	                </div>
+	            </div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-3 col-sm-6 hero-feature">
+	                <div class="thumbnail" style="height: 300px">
+	                    <%= link_to image_tag(@course_d.photo), @course_d %>
+	                    <div class="caption">
+	                        <h6><%= @course_d.name %></h6>
+	                    </div>
+	                </div>
+	            </div>
+			</div>
+
+		</div>
+
+        <hr>
+    	<!-- /.container -->
