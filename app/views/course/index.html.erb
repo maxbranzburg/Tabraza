@@ -1,2 +1,15 @@
-<h1>Course#index</h1>
-<p>Find me in app/views/course/index.html.erb</p>
+<h1>Courses</h1>
+
+<br />
+
+<div>
+
+	<ul>
+
+		<% @courses.each do |course| %>
+			<h4><%= link_to course.name, course %></h4>
+		<% end %>
+
+	</ul>
+
+</div>

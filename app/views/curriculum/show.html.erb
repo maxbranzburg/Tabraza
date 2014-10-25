@@ -1,2 +1,15 @@
-<h1>Curriculum#show</h1>
-<p>Find me in app/views/curriculum/show.html.erb</p>
+<h1><%= @curriculum.name %></h1>
+
+<br />
+
+<div>
+
+	<ul>
+
+		<% @courses.each do |course| %>
+			<p><b><%= link_to course.name, {controller: "course", action: "show", id: course} %></b>, <%= course.providor.name %></p>
+		<% end %>
+
+	</ul>
+
+</div>

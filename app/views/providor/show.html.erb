@@ -1,2 +1,32 @@
-<h1>Providor#show</h1>
-<p>Find me in app/views/providor/show.html.erb</p>
+<h1><%= @providor.name %></h1>
+
+<hr>
+
+<div class="container">
+	<div class="span6">
+		<h5><%= @courses.length %> <%= @course_term %> available</h5>
+		<% if @courses.length > 0 %>
+			<ul>
+				<% @courses.each do |course| %>
+					<p><%= link_to course.name, course %></p>
+				<% end %>
+			</ul>
+		<% else %>
+			<em>No current offerings</em>
+		<% end %>
+	</div>
+
+	<div class="span3">
+		
+		
+		<% if @providor.squareLogo && @providor.squareLogo != "" %>	
+			<p><%= link_to image_tag(@providor.squareLogo), @providor %></p>
+		<% else %>
+				<p><%= link_to @providor %></p>
+		<% end %>
+		
+		<hr>
+				
+	</div>
+		
+</div>

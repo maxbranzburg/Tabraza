@@ -1,2 +1,39 @@
-<h1>Course#show</h1>
-<p>Find me in app/views/course/show.html.erb</p>
+<h1><%= @course.name %></h1>
+
+<hr>
+
+<div class="container">
+	<div class="span6">
+		<% if @course.video && @course.video != "" %>
+			<h5>Course Preview</h5>
+			<p><iframe width="420" height="236" src="//www.youtube.com/embed/<%= @course.video %>" frameborder="0" allowfullscreen></iframe></p>
+			<hr>
+		<% end %>
+		<% if @course.description && @course.description != "" %>
+			<h5>Description</h5>
+			<p><%= @course.description.html_safe %></p>
+		<% end %>
+	</div>
+	<div class="span3">
+		
+		<div align="center">
+			<p><a href=<%= @first_session_url%> class="btn btn-success" target="blank">Take Course Now!</a></p>
+			<hr>
+			<% if @providor && @providor != "" %>
+				<% if @providor.squareLogo && @providor.squareLogo != "" %>
+					<p><%= link_to image_tag(@providor.squareLogo), @providor %></p>
+				<% else %>
+					<p><%= link_to @providor %></p>
+				<% end %>
+				<hr>
+			<% end %>
+		</div>
+		<% if @instructor && @instructor != "" %>
+			<h5>Instructors</h5>
+			<%= @instructor %></p>
+		<% end %>
+		
+	</div>
+		
+</div>
+
