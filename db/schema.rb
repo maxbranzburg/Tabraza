@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141025021748) do
+ActiveRecord::Schema.define(version: 20141025022414) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,7 +33,10 @@ ActiveRecord::Schema.define(version: 20141025021748) do
     t.integer  "hours_per_week"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "providor_id"
   end
+
+  add_index "courses", ["providor_id"], name: "index_courses_on_providor_id", using: :btree
 
   create_table "providors", force: true do |t|
     t.integer  "platform_providor_id"
