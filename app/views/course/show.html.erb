@@ -6,7 +6,17 @@
 	<div class="span6">
 		<% if @course.video && @course.video != "" %>
 			<h5>Course Preview</h5>
-			<p><iframe width="420" height="236" src="//www.youtube.com/embed/<%= @course.video %>" frameborder="0" allowfullscreen></iframe></p>
+			
+			<div style="width:451px; height:254px;">
+				<video style poster="https://d15cw65ipctrr.cloudfront.net/e7/#{@course.video}/logo_course.jpg">
+					<source type="video/mp4" src="https://d15cw65ipctrr.cloudfront.net/e7/#{@course.video}/full/540p/index.mp4">
+					<source type="video/webm" src="https://d15cw65ipctrr.cloudfront.net/e7/#{@course.video}/full/540p/index.webm">
+				</video>
+			</div>
+
+			<!-- <p><iframe width="420" height="236" src="//www.youtube.com/embed/<%= @course.video %>" frameborder="0" allowfullscreen></iframe></p>
+ -->
+
 			<hr>
 		<% end %>
 		<% if @course.description && @course.description != "" %>
