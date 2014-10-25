@@ -30,6 +30,11 @@ gem 'spring',        group: :development
 # For Heroku test
 gem 'cowsay'
 
+# Get and parse from APIs
+gem 'json'
+gem 'rest-client'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
