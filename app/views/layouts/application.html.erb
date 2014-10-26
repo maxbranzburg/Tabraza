@@ -29,8 +29,8 @@
 	    <%= link_to "Tabraza", root_path, class: "brand" %>
 	    <div class="nav-collapse">
 	      <ul class="nav">
+	        <li><%= link_to "Concentrations", concentration_index_path %></li>
 	        <li><%= link_to "Courses", course_index_path %></li>
-	        <li><%= link_to "Curriculums", curriculum_index_path %></li>
 	        <li><%= link_to "Universities", providor_index_path %></li>
 	      </ul>
 	    </div>
@@ -43,7 +43,8 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<%= bootstrap_flash %>
-			<%= yield %>
+				<%= yield %>
+			</div>
 		</div>
 	</div>
 	<!--/row-->

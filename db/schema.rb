@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141025022904) do
+ActiveRecord::Schema.define(version: 20141026180132) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "concentrations", force: true do |t|
+    t.text     "name"
+    t.text     "skill_level"
+    t.integer  "estimated_months"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "courses", force: true do |t|
     t.integer  "platform_course_id"
@@ -37,15 +45,6 @@ ActiveRecord::Schema.define(version: 20141025022904) do
   end
 
   add_index "courses", ["providor_id"], name: "index_courses_on_providor_id", using: :btree
-
-  create_table "curriculums", force: true do |t|
-    t.text     "name"
-    t.text     "skill_level"
-    t.integer  "estimated_months"
-    t.text     "concentration"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "providors", force: true do |t|
     t.integer  "platform_providor_id"

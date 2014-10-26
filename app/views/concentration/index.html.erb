@@ -1,0 +1,15 @@
+<h1>Concentrations</h1>
+
+<br />
+
+<div>
+
+	<ul>
+
+		<% @concentrations.each do |concentration| %>
+			<h4><%= link_to concentration.name, concentration %></h4>
+		<% end %>
+
+	</ul>
+
+</div>
