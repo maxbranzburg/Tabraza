@@ -2,10 +2,8 @@ class Course < ActiveRecord::Base
 
 	belongs_to :providor
 	has_many :sessions
-	has_many :categorizations
-	has_many :categories, :through => :categorizations
-	has_many :catalogues
-	has_many :curriculums, :through => :catalogues
+	has_many :curriculums
+	has_many :concentrations, :through => :curriculums
 
 
 	def self.get_coursera_courses

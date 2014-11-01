@@ -1,10 +1,8 @@
 class CreateCurriculums < ActiveRecord::Migration
   def change
     create_table :curriculums do |t|
-      t.text :name
-      t.text :skill_level
-      t.integer :estimated_months
-      t.text :concentration
+      t.integer :course_id
+      t.integer :concentration_id
 
       t.timestamps
     end
