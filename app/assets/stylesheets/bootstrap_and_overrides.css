@@ -6,6 +6,77 @@
   =require twitter-bootstrap-static/fontawesome
   */
 
+header {
+	text-align: center;
+	background-color: orange;
+	padding: 30px;
+	margin: 0px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.welcome-navbar {
+	margin-bottom:0px;
+}
+
+.curriculum {
+	border-top: 3px solid black;
+	background: white;
+	padding-top: 0px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	margin: 30px;
+	border-radius: 3px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, .5);
+}
+
+.curriculum_title {
+	padding-left: 15px;
+}
+
+.course_photo {
+	height: 130px;
+}
+
+h3 {
+	color: #427fed;
+	font-weight: 300;
+}
+
+h4 {
+	color: #427fed;
+	font-weight: 200;
+}
+
+#a {
+	border-color: green;
+}
+
+#b {
+	border-color: orange;
+}
+
+#c {
+	border-color: red;
+}
+
+#a h3 {
+	color: green;
+	font-weight: 300;
+}
+
+#b h3 {
+	color: orange;
+	font-weight: 300;
+}
+
+#c h3 {
+	color: red;
+	font-weight: 300;
+}
+
 /*@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
 
 body {

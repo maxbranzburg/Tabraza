@@ -1,10 +1,11 @@
 class WelcomeController < ApplicationController
 
   def index
-  	@course_a = Course.find(104)
-  	@course_b = Course.find(121)
-  	@course_c = Course.find(693)
-  	@course_d = Course.find(174)
+  	
+	@concentration_a = Concentration.find(2)
+  	@concentration_b = Concentration.find(3)
+  	@concentration_c = Concentration.find(4)
+  	
   end
 
 end
