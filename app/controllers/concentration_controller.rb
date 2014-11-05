@@ -5,8 +5,8 @@ class ConcentrationController < ApplicationController
   end
 
   def show
-    @concentation = Concentration.find(params[:id])
-    @courses = @concentration.courses.to_ary.sort!{ |a,b| a.name <=> b.name }
+    @concentration = Concentration.find(params[:id])
+    @courses = @concentration.courses
   end
 
 end
